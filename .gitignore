@@ -11,4 +11,6 @@ sysroots
 bitbake-logs
 /temp
 *.o
-*.cgi
+image
+src/editconf.cgi
+src/strconf.cgi
