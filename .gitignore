@@ -14,3 +14,4 @@ bitbake-logs
 image
 src/editconf.cgi
 src/strconf.cgi
+src/unescape
