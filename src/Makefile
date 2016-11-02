@@ -33,7 +33,7 @@ install:	$(PROGS)
 	$(INSTALL) -m $(INSTMODE) -o $(INSTOWNER) -g $(INSTGROUP) xmlxmt.cgi   $(DESTDIR)$(CGIDIR)
 	$(INSTALL) -m $(INSTMODE) -o $(INSTOWNER) -g $(INSTGROUP) editconf.php $(DESTDIR)$(CGIDIR)
 clean:
-	rm -rf $(PROGS) *.o core
+	rm -rf $(PROGS) *.o core .depend
 depend: .depend
 
 .depend: $(SRCS)
