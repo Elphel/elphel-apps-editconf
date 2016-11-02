@@ -34,9 +34,10 @@ install:	$(PROGS)
 	$(INSTALL) -m $(INSTMODE) -o $(INSTOWNER) -g $(INSTGROUP) editconf.php $(DESTDIR)$(CGIDIR)
 clean:
 	rm -rf $(PROGS) *.o core
-#dependency:
-#	make depend
-#depend:
-#	makedepend -Y -- $(CFLAGS) -- $(SRCS) 2>/dev/null
-#	touch dependency
-# DO NOT DELETE
+depend: .depend
+
+.depend: $(SRCS)
+	rm -f ./.depend
+	$(CC) $(CFLAGS) -MM $^ > ./.depend;
+
+include .depend
