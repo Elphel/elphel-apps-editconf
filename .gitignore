@@ -12,7 +12,11 @@ sysroots
 bitbake-logs
 /temp
 *.o
-image
 src/editconf.cgi
 src/strconf.cgi
 src/unescape
+
+doxygen.tag
+/image
+/scripts
+/html
