@@ -16,6 +16,10 @@ src/editconf.cgi
 src/strconf.cgi
 src/unescape
 
+all_sources.lst
+excluding.lst
+including.lst
+
 doxygen.tag
 /image
 /scripts
